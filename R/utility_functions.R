@@ -89,14 +89,14 @@ empty_as_na <- function(x) {
   ifelse(as.character(x) != "", x, NA)
 }
 
-data <- data %>% mutate_each(funs(empty_as_na))
-
-
-data <- data %>%
-  naniar::replace_with_na_if(.predicate = is.character,
-                             condition = ~ .x %in% ("Not stated"))
-
-data <- data %>% replace_na(list(ethnicity = "Missing"))
+# data <- data %>% dplyr::mutate_each(funs(empty_as_na))
+# 
+# 
+# data <- data %>%
+#   naniar::replace_with_na_if(.predicate = is.character,
+#                              condition = ~ .x %in% ("Not stated"))
+# 
+# data <- data %>% replace_na(list(ethnicity = "Missing"))
 
 
 
