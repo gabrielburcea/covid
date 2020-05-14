@@ -1,0 +1,3 @@
+#Generate by roxygen2: do not edit by hand
+
+exportPattern("^[[:alpha:]]+")
