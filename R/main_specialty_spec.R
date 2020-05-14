@@ -4,6 +4,8 @@
 #'
 #' @return
 #' @export
+#' @importFrom magrittr %>%
+#' 
 #'
 #' @examples
 map_main_spec <- function(data){
